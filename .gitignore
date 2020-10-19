@@ -6,9 +6,8 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+#
 /key.json
-#
-#
 /travis-key.json
 /terraf-travis-76081645828d.json
 /terraf-travis-0ed3ec96e515.json
