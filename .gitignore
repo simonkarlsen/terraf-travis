@@ -7,6 +7,7 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 #
+#
 /key.json
 /travis-key.json
 /terraf-travis-76081645828d.json
