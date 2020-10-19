@@ -1,14 +1,14 @@
 terraform {
   backend "gcs" {
-    bucket = "terraf_bucket"
+    bucket = "terraformtravistest111-bucket1"
     prefix = "terraformstate"
-    credentials = "terraf-travis-0ed3ec96e515.json"
+    credentials = "terraformtravistest111-ef2b02ef8be0.json"
   }
 }
 
 provider "google-beta" {
-  credentials = file("terraf-travis-0ed3ec96e515.json")
-  project     = "terraf-travis"
+  credentials = file("terraformtravistest111-ef2b02ef8be0.json")
+  project     = "terraformtravistest111"
   version = "~> 3.0.0-beta.1"
 }
 
