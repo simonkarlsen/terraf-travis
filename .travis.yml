@@ -7,12 +7,12 @@ branches:
   only:
   - master
 before_install:
-- openssl aes-256-cbc -K $encrypted_4409d9b2903a_key -iv $encrypted_4409d9b2903a_iv -in key.json.enc -out key.json -d
+- openssl aes-256-cbc -K $encrypted_ed79cc29a319_key -iv $encrypted_ed79cc29a319_iv -in travis-key.json.enc -out travis-key.json -d
 - curl https://sdk.cloud.google.com | bash > /dev/null
 - source "$HOME/google-cloud-sdk/path.bash.inc"
-- gcloud auth activate-service-account --key-file=key.json
+- gcloud auth activate-service-account --key-file=travis-key.json
 - gcloud config set project "${GCP_PROJECT_ID}"
-- export GOOGLE_APPLICATION_CREDENTIALS=./key.json
+- export GOOGLE_APPLICATION_CREDENTIALS=./travis-key.json
 - wget https://releases.hashicorp.com/terraform/"$tf_version"/terraform_"$tf_version"_linux_amd64.zip
 - unzip terraform_"$tf_version"_linux_amd64.zip
 - sudo mv terraform /usr/local/bin/
