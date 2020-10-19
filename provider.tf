@@ -1,7 +1,7 @@
 terraform {
   backend "gcs" {
     bucket = "terraf_bucket"
-    prefix = "terraformstate"
+    prefix = "terraf-travis"
     credentials = "key.json"
   }
 }
