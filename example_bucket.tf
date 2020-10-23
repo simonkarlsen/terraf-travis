@@ -1,6 +1,6 @@
 resource "google_storage_bucket" "static-site" {
-  project = "terraformtravistest111"
-  name = "terraformecreatexample-bucket1234"
+  project = "travisterraform51054"
+  name = "terraformtravistestbucket96691234"
   location = "EU"
 }
 
